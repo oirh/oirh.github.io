@@ -1,0 +1,100 @@
+<div class="page dashboard-page">
+    <!-- bradcome -->
+    <div class="bg-light lter b-b wrapper-md mb-10">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <h1 class="font-thin h3 m-0">Funcionários</h1>
+                <small class="text-muted"></small>
+                <a ui-sref="register-employees" role="button" class="btn btn-success pull-right">Contratar colaborador</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <section class="boxs ">
+                <!-- boxs header -->
+                <div class="boxs-header dvd dvd-btm">
+                    <h1 class="custom-font"><strong>Colaboradores</strong></h1>
+                </div>
+                <div class="boxs-widget">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <select class="input-sm form-control inline w-sm">
+                                <option value="0">Bulk action</option>
+                                <option value="1">Delete selected</option>
+                                <option value="2">Archive selected</option>
+                                <option value="3">Copy selected</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <button class="btn btn-primary">Apply</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <input type="text" class="input-sm form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button">Go!</button>
+                                        </span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxs-body p-0">
+                    <div class="table-responsive">
+                        <table class="table mb-0" id="usersList">
+                            <thead>
+                                <tr>
+                                    <th width="40"></th>
+                                    <th>Nome</th>
+                                    <th>Email</th>
+                                    <th>Telefone</th>
+                                    <!--th>Cargo</th-->
+                                    <!--th>Departamento</th-->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="employee in employees">
+                                    <td><img src="images/profile-photo.jpg" alt="" class="0 size-30x30"></td>
+                                    <td>{{employee.name}}</td>
+                                    <td>{{employee.email}}</td>
+                                    <td>{{employee.phone}}</td>
+                                    <!--td></td-->
+                                    <!--td></td-->
+                                    <!-- <td><span class="check-toggler checked toggle-class" data-toggle="checked"></span></td> -->
+                                    <!-- <td><span class="check-toggler checked toggle-class" data-toggle="checked"></span></td> -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /boxs body -->
+                <!-- boxs footer -->
+                <div class="boxs-footer dvd dvd-top">
+                    <div class="row">
+                        <div class="col-sm-2 hidden-xs">
+                            <select class="input-sm form-control w-sm inline">
+                                <option value="0">Bulk action</option>
+                                <option value="1">Delete selected</option>
+                                <option value="2">Archive selected</option>
+                                <option value="3">Copy selected</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <button class="btn btn-primary">Apply</button>
+                        </div>
+                        <div class="col-sm-3 text-left"><small class="text-muted">1 de 5</small></div>
+                        <div class="col-sm-5 text-right">
+                            <ul class="pagination pagination-sm m-0">
+                                <li><a href><i class="fa fa-chevron-left"></i></a></li>
+                                <li><a href>1</a></li>
+                                <li><a href>2</a></li>
+                                <li><a href>3</a></li>
+                                <li><a href><i class="fa fa-chevron-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /boxs footer --> 
+            </section>
+        </div>
+    </div>
+</div>

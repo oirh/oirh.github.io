@@ -1,0 +1,47 @@
+<div class="page dashboard-page">
+    <!-- bradcome -->
+    <div class="bg-light lter b-b wrapper-md mb-10">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <h1 class="font-thin h3 m-0">Contadores</h1>
+                <small class="text-muted"></small>
+                <a ui-sref="register-accountants" role="button" class="btn btn-success pull-right">Novo contador</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <section class="boxs ">
+                <!-- boxs header -->
+                <div class="boxs-header dvd dvd-btm">
+                    <h1 class="custom-font"><strong>Contadores cadastrados</strong></h1>
+                </div>
+                <div class="boxs-body p-0">
+                    <div class="table-responsive">
+                        <table class="table mb-0" id="usersList">
+                            <thead>
+                                <tr>
+                                    <th width="40"></th>
+                                    <th>Nome</th>
+                                    <th>E-mail</th>
+                                    <th>Telefone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="accountant in accountants">
+                                    <td><img src="images/profile-photo.jpg" alt="" class="0 size-30x30"></td>
+                                    <td>{{accountant.name}}</td>
+                                    <td>{{accountant.email}}</td>
+                                    <td>{{accountant.phone}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /boxs body -->
+            </section>
+        </div>
+    </div>
+    
+</div>

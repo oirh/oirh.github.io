@@ -1,0 +1,147 @@
+<div class="page dashboard-page">
+    <!-- bradcome -->
+    <div class="bg-light lter b-b wrapper-md mb-10">
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <h1 class="font-thin h3 m-0">Admissão de colaborador</h1>
+                <small class="text-muted"></small> </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form ng-submit="register(employee)">
+                <section class="boxs">
+                    <div class="boxs-header dvd dvd-btm">
+                        <h2 class="custom-font">Dados do  <strong>colaborador</strong></h2>
+                    </div>
+                    <input type="hidden" ng-model="accountant.company_id">
+                    <div class="boxs-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Nome</label>
+                                    <input id="default-ml" ng-model="employee.name" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>E-mail</label>
+                                    <input id="threshold-ml" ng-model="employee.email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Celular <small>(Para envio de convite)</small></label>
+                                    <input id="threshold-ml" ng-model="employee.phone" class="form-control" ui-br-phone-number>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 
+                    TODO @ThiagoMendes 
+                    Lembra do annotations no código, só dar aquele " grep -irn 'Thiago' . " na pagina raiz
+                    Bom de qualquer maneira Eu vou deixar comentado auqi embaixo pois pensar me uma lógica para criar ese cargo acho melhor dar uma repensada, tem mt campo ali que é combo box, então como será que fazemos, já começamos a atrelar isso nas configurações da empresa como a xerpa ou nem, deixamos fixo memso?
+                    Acho que vale a pena pensar um pouco mais e fazer algo desde já escalável né.
+                -->
+                <!--section class="boxs">
+                    <div class="boxs-header dvd dvd-btm">
+                        <h2 class="custom-font">Dados da  <strong>vaga</strong></h2>
+                    </div>
+                    <div class="boxs-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Cargo</label>
+                                    <select tabindex="3" class="chosen-select form-control">
+                                        <option value="cargo1">Cargo 1</option>
+                                        <option value="cargo1">Cargo 2</option>
+                                        <option value="cargo1">Cargo 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Departamento</label>
+                                    <select tabindex="3" class="chosen-select form-control">
+                                        <option value="dep1">Departamento 1</option>
+                                        <option value="dep2">Departamento 2</option>
+                                        <option value="dep3">Departamento 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Salário</label>
+                                    <input id="threshold-ml" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Tipo do salário</label>
+                                    <select tabindex="3" class="chosen-select form-control">
+                                        <option value="sal1">salário 1</option>
+                                        <option value="sal2">salário 2</option>
+                                        <option value="sal3">salário 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Jornada de trabalho</label>
+                                    <select tabindex="3" class="chosen-select form-control">
+                                        <option value="Jornada1">Jornada 1</option>
+                                        <option value="Jornada2">Jornada 2</option>
+                                        <option value="Jornada3">Jornada 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Regime da contratação</label>
+                                    <select tabindex="3" class="chosen-select form-control">
+                                        <option value="Regime">CLT</option>
+                                        <option value="Regime">PJ</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        Ter CNH?
+                                        <br>
+                                        <br>
+                                        <label class="box1">
+                                            <input type="radio" name="optionsCheckboxes"> SIM
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="optionsCheckboxes"> NÃO
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section-->
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <button type="reset" class="btn btn-raised btn-default">Cancelar
+                                <div class="ripple-container"></div>
+                            </button>
+                            <button type="submit" class="btn btn-raised btn-primary pull-right">Enviar e Salvar</button>
+                        </div>
+                    </div>
+                </div><br><br>
+            </form>
+        </div>
+    </div>
+</div>

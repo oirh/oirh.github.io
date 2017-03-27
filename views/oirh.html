@@ -1,0 +1,122 @@
+<div id="wrap" class="animsition">
+        <!-- HEADER Content -->
+    <section id="header" class="theme-light">
+        <header class="clearfix">
+            <!-- Branding -->
+            <div class="branding"> <a class="brand" href="index.html"><span>Oakleaf</span></a> <a role="button" tabindex="0" class="offcanvas-toggle visible-xs-inline"><i class="fa fa-bars"></i></a> </div>
+            <!-- Branding end -->
+            <!-- Left-side navigation -->
+            <ul class="nav-left pull-left list-unstyled list-inline">
+                <li class="leftmenu-collapse"><a role="button" tabindex="0" class="collapse-leftmenu"><i class="fa fa-arrow-circle-o-left"></i></a></li>
+            </ul>
+            <!-- Left-side navigation end -->
+            <div class="overlay"></div>
+            <!-- Search end -->
+            <!-- Right-side navigation -->
+            <ul class="nav-right pull-right list-inline">
+                <li class="dropdown nav-profile">
+                    <a href class="dropdown-toggle" data-toggle="dropdown"> <img src="images/profile-photo.jpg" alt="" class="0 size-30x30"></a>
+                    <ul class="dropdown-menu" role="menu" style="display: none;">
+                        <li>
+                            <div class="user-info">
+                                <div class="user-name">Jonathan Smith</div>
+                                <div class="user-position online">Available</div>
+                            </div>
+                        </li>
+                        <li><a href="#" role="button" tabindex="0"><span class="label label-success pull-right">80%</span><i class="fa fa-user"></i>Profile</a></li>
+                        <li><a role="button" tabindex="0"><span class="label label-info pull-right">new</span><i class="fa fa-check"></i>Tasks</a></li>
+                        <li> <a role="button" tabindex="0"><i class="fa fa-cog"></i>Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="locked.html" role="button" tabindex="0"><i class="fa fa-lock"></i>Lock</a></li>
+                        <li><a ui-sref="login" role="button" tabindex="0"><i class="fa fa-sign-out"></i>Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Right-side navigation end -->
+        </header>
+    </section>
+    <!--/ HEADER Content  -->
+    <!--  CONTROLS Content -->
+    <div id="controls">
+        <!-- #######################################################################################################
+
+        COMPONENTE MENU LATERAL 
+
+        ############################################################################################ -->
+        <aside id="leftmenu" class="theme-default aside-fixed">
+            <div id="leftmenu-wrap">
+                <div class="panel-group slim-scroll" role="tablist">
+                    <div class="panel panel-default">
+                        <div id="leftmenuNav" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                <!--  NAVIGATION Content -->
+                                <ul id="navigation">
+                                    <li ng-class="{active: $state.includes('dashboard')}">
+                                        <a ui-sref="dashboard">
+                                            <i class="fa fa-dashboard"></i> 
+                                            <span>Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <!-- 
+                                        TODO @ThiagoMendes
+                                        Oia aqui mais um annotation rsrs,
+                                        Bom thiago eu desabilitei esses itens, para que possamos pensar da melhor maneira o que vai dentro de cada um, então vou deixar desabilitado mesmo rsrs.
+                                        vamos pensar um pouco melhor sobre
+                                    -->
+                                    <!--li ng-class="{active: $state.includes('companies')}"> 
+                                        <a ui-sref="companies" role="button" tabindex="0">
+                                            <i class="fa fa-building-o"></i> 
+                                            <span>Configuração da empresa</span>
+                                        </a>
+                                    </li>
+                                    <li ng-class="{active: $state.includes('admissions')}"> 
+                                        <a ui-sref="admissions" role="button" tabindex="0">
+                                            <i class="fa fa-envelope"></i> 
+                                            <span>Configuração da admissão</span>
+                                        </a>
+                                    </li>
+                                     <li ng-class="{active: $state.includes('providers')}"> 
+                                        <a ui-sref="providers" role="button" tabindex="0">
+                                            <i class="fa fa-users"></i> 
+                                            <span>Fornecedores</span>
+                                        </a>
+                                    </li-->
+                                    <li ng-class="{active: $state.includes('accountants', 'register-accountants')}"> 
+                                        <a ui-sref="accountants" role="button" tabindex="0">
+                                            <i class="fa fa-users"></i> 
+                                            <span>Contadores</span>
+                                        </a>
+                                    </li>
+                                    <li ng-class="{active: $state.includes('medical-clinics')}"> 
+                                        <a ui-sref="medical-clinics" role="button" tabindex="0">
+                                            <i class="fa fa-users"></i> 
+                                            <span>Clínicas Médicas</span>
+                                        </a>
+                                    </li>
+                                     <li ng-class="{active: $state.includes('employees')}"> 
+                                        <a ui-sref="employees" role="button" tabindex="0">
+                                            <i class="fa fa-id-card-o"></i> 
+                                            <span>Colaboradores</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--/ NAVIGATION Content -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #######################################################################################################
+
+        FIM DO COMPONENTE MENU LATERAL 
+
+        ############################################################################################ -->
+    </div>
+    <!--/ CONTROLS Content -->
+    <!-- CONTENT -->
+    <section id="content">
+        <div ui-view></div>
+    </section>
+    <!--/ CONTENT -->
+</div>
